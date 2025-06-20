@@ -1,0 +1,54 @@
+Customer module
+http://localhost:8909/showCustomer-GET
+
+http://localhost:8909/addCustomer-POST
+{
+    "cusId": 23,
+    "cusName": "Laluram",
+    "cusPhnNo": "9344556677",
+    "cusUsername": "Lalu",
+    "cusPassword": "Lalyta@",
+    "cusEmail": "Lalu@gmail.com"
+}
+
+http://localhost:8909/searchByUserName/sand-GET
+
+http://localhost:8909/customerLogin/Lalu/Lalyta@-GET
+
+Restaurants Module
+http://localhost:8909/showRestaurants-GET
+
+http://localhost:8909/restaurantByName/Saravana Bhavan-GET
+
+http://localhost:8909/restaurantByNameLocation/Saravana Bhavan/Villupuram-GET
+
+http://localhost:8909/restaurantById/1-GET
+
+http://localhost:8909/addRestaurant-POST
+{
+    "name": "Ramya Cafe",
+    "location": "Chennai",
+    "contactNumber": "9800112345",
+    "email": "Ramya@cafe.com"
+}
+http://localhost:8909/deleteRestaurant/8-DELETE METHOD
+
+Menu Module
+http://localhost:8909/searchMenu/1-GET
+
+http://localhost:8909/searchByRestaurantId/1-GET
+
+http://localhost:8909/deleteMenu/1-DELETE
+
+Wallet Module
+http://localhost:8909/showCustomerWallets/1-GET
+
+http://localhost:8909/addWallet-POST
+{
+        "cusId": 4,
+        "walAmount": 3000.0,
+        "walSource": "DEBIT_CARD"
+    }
+
+http://localhost:8909/showCustomerWalletInfo/4/DEBIT_CARD-GET
+
